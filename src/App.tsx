@@ -7,12 +7,13 @@ import {
   Outlet,
 } from "react-router-dom";
 import Home from "./pages/home/Home";
-
+import "./styles/global.scss";
 import Users from "./pages/users/users";
 import Products from "./pages/products/Products";
 import Menu from "./components/menu/Menu";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/footer";
+import Login from "./pages/login/Login";
 
 const App = () => {
   const Layout = () => {
@@ -35,15 +36,25 @@ const App = () => {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Home />,
-    },
-    {
-      path: "users",
-      element: <Users />,
-    },
-    {
-      path: "products",
-      element: <Products />,
+      element: <Layout />,
+      children: [
+        {
+          path: "/",
+          element: <Home />,
+        },
+        {
+          path: "/users",
+          element: <Users />,
+        },
+        {
+          path: "/products",
+          element: <Products />,
+        },
+        {
+          path: "/login",
+          element: <Login />,
+        },
+      ],
     },
   ]);
   return <RouterProvider router={router} />;

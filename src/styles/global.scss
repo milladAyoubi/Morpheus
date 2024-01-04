@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap");
+@import "./variables.scss";
 * {
   margin: 0;
   padding: 0;
@@ -7,4 +9,25 @@
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.main {
+  font-family: "Noto Sans", sans-serif;
+  background-color: $bg-main;
+  color: white;
+}
+
+.container {
+  display: flex;
+}
+
+.menuContainer {
+  max-width: 250px;
+  padding: 1rem 2rem;
+  border-right: 2px solid $bg-soft;
+}
+
+.contentContainer {
+  padding: 1rem 2rem;
+  max-width: 100px;
 }
