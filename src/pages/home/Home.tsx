@@ -2,6 +2,7 @@ import React from "react";
 import "./home.scss";
 import TopBox from "../../components/topBox/TopBox";
 import ChartBox from "../../components/chartBox/chartBox";
+import LineChart from "../../components/lineChart/LineChart";
 import {
   barChartBoxRevenue,
   barChartBoxVisit,
@@ -9,7 +10,9 @@ import {
   chartBoxProduct,
   chartBoxRevenue,
   chartBoxUser,
+  simpleLineChart,
 } from "../../data";
+
 const Home = () => {
   return (
     <section>
@@ -34,7 +37,9 @@ const Home = () => {
         <div className="box box6">
           <ChartBox {...chartBoxRevenue} />
         </div>
-        <div className="box box7">Box 7</div>
+        <div className="box box7">
+          <LineChart {...simpleLineChart} />
+        </div>
         <div className="box box8">Box 8</div>
         <div className="box box9">Box 9</div>
       </div>
