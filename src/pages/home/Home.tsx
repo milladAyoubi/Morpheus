@@ -2,7 +2,14 @@ import React from "react";
 import "./home.scss";
 import TopBox from "../../components/topBox/TopBox";
 import ChartBox from "../../components/chartBox/chartBox";
-import Clock from "react-live-clock";
+import {
+  barChartBoxRevenue,
+  barChartBoxVisit,
+  chartBoxConversion,
+  chartBoxProduct,
+  chartBoxRevenue,
+  chartBoxUser,
+} from "../../data";
 const Home = () => {
   return (
     <section>
@@ -15,18 +22,17 @@ const Home = () => {
           <TopBox />
         </div>
         <div className="box box2">
-          <ChartBox />
+          <ChartBox {...chartBoxUser} />
         </div>
         <div className="box box3">
-          {" "}
-          <ChartBox />
+          <ChartBox {...chartBoxProduct} />
         </div>
         <div className="box box4">Box 4</div>
         <div className="box box5">
-          <ChartBox />
+          <ChartBox {...chartBoxConversion} />
         </div>
         <div className="box box6">
-          <ChartBox />
+          <ChartBox {...chartBoxRevenue} />
         </div>
         <div className="box box7">Box 7</div>
         <div className="box box8">Box 8</div>

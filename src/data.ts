@@ -175,13 +175,13 @@ export const chartBoxUser = {
   dataKey: "users",
   percentage: 45,
   chartData: [
-    { name: "Sun", users: 400 },
-    { name: "Mon", users: 600 },
-    { name: "Tue", users: 500 },
-    { name: "Wed", users: 700 },
-    { name: "Thu", users: 400 },
-    { name: "Fri", users: 500 },
-    { name: "Sat", users: 450 },
+    { name: "Sun", users: 526 },
+    { name: "Mon", users: 674 },
+    { name: "Tue", users: 743 },
+    { name: "Wed", users: 599 },
+    { name: "Thu", users: 476 },
+    { name: "Fri", users: 710 },
+    { name: "Sat", users: 800 },
   ],
 };
 
@@ -193,13 +193,13 @@ export const chartBoxProduct = {
   dataKey: "products",
   percentage: 21,
   chartData: [
-    { name: "Sun", products: 400 },
-    { name: "Mon", products: 600 },
-    { name: "Tue", products: 500 },
-    { name: "Wed", products: 700 },
-    { name: "Thu", products: 400 },
-    { name: "Fri", products: 500 },
-    { name: "Sat", products: 450 },
+    { name: "Sun", products: 4000 },
+    { name: "Mon", products: 6000 },
+    { name: "Tue", products: 5000 },
+    { name: "Wed", products: 7000 },
+    { name: "Thu", products: 4000 },
+    { name: "Fri", products: 5000 },
+    { name: "Sat", products: 4500 },
   ],
 };
 export const chartBoxRevenue = {
@@ -210,13 +210,13 @@ export const chartBoxRevenue = {
   dataKey: "revenue",
   percentage: -12,
   chartData: [
-    { name: "Sun", revenue: 400 },
-    { name: "Mon", revenue: 600 },
-    { name: "Tue", revenue: 500 },
-    { name: "Wed", revenue: 700 },
-    { name: "Thu", revenue: 400 },
-    { name: "Fri", revenue: 500 },
-    { name: "Sat", revenue: 450 },
+    { name: "Sun", revenue: 71800 },
+    { name: "Mon", revenue: 65500 },
+    { name: "Tue", revenue: 45600 },
+    { name: "Wed", revenue: 64300 },
+    { name: "Thu", revenue: 86900 },
+    { name: "Fri", revenue: 78100 },
+    { name: "Sat", revenue: 70700 },
   ],
 };
 export const chartBoxConversion = {
@@ -227,13 +227,13 @@ export const chartBoxConversion = {
   dataKey: "ratio",
   percentage: 12,
   chartData: [
-    { name: "Sun", ratio: 400 },
-    { name: "Mon", ratio: 600 },
-    { name: "Tue", ratio: 500 },
-    { name: "Wed", ratio: 700 },
-    { name: "Thu", ratio: 400 },
-    { name: "Fri", ratio: 500 },
-    { name: "Sat", ratio: 450 },
+    { name: "Sun", ratio: 2 },
+    { name: "Mon", ratio: 4 },
+    { name: "Tue", ratio: 6 },
+    { name: "Wed", ratio: 4 },
+    { name: "Thu", ratio: 5 },
+    { name: "Fri", ratio: 6 },
+    { name: "Sat", ratio: 7 },
   ],
 };
 
