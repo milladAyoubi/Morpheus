@@ -12,6 +12,7 @@ import {
   chartBoxUser,
   simpleLineChart,
 } from "../../data";
+import PieChartBox from "../../components/pieChart/PieChartBox";
 
 const Home = () => {
   return (
@@ -30,7 +31,9 @@ const Home = () => {
         <div className="box box3">
           <ChartBox {...chartBoxProduct} />
         </div>
-        <div className="box box4">Box 4</div>
+        <div className="box box4">
+          <PieChartBox />
+        </div>
         <div className="box box5">
           <ChartBox {...chartBoxConversion} />
         </div>
