@@ -3,6 +3,9 @@ import "./home.scss";
 import TopBox from "../../components/topBox/TopBox";
 import ChartBox from "../../components/chartBox/chartBox";
 import LineChart from "../../components/lineChart/LineChart";
+import DataBar1 from "../../components/dataBar/dataBar1";
+import PieChartBox from "../../components/pieChart/PieChartBox";
+import BarChartBox from "../../components/barChart/BarChart";
 import {
   barChartBoxRevenue,
   barChartBoxVisit,
@@ -11,8 +14,8 @@ import {
   chartBoxRevenue,
   chartBoxUser,
   simpleLineChart,
+  dataBarData,
 } from "../../data";
-import PieChartBox from "../../components/pieChart/PieChartBox";
 
 const Home = () => {
   return (
@@ -41,10 +44,14 @@ const Home = () => {
           <ChartBox {...chartBoxRevenue} />
         </div>
         <div className="box box7">
+          <DataBar1 {...dataBarData} />
+        </div>
+        <div className="box box8">
           <LineChart {...simpleLineChart} />
         </div>
-        <div className="box box8">Box 8</div>
-        <div className="box box9">Box 9</div>
+        <div className="box box9">
+          <BarChartBox {...barChartBoxRevenue} />
+        </div>
       </div>
     </section>
   );
