@@ -296,7 +296,7 @@ export const simpleLineChart = {
       name: "Page C",
       uv: 2000,
       pv: 9800,
-      amt: 2290,
+      amt: 3290,
     },
     {
       name: "Page D",
@@ -308,7 +308,7 @@ export const simpleLineChart = {
       name: "Page E",
       uv: 1890,
       pv: 4800,
-      amt: 2181,
+      amt: 3181,
     },
     {
       name: "Page F",
