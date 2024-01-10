@@ -9,10 +9,8 @@ import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import SearchIcon from "@mui/icons-material/Search";
 import { ColorModeContext, tokens } from "../../theme";
 const Menu = () => {
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isCollapsed, setIsCollapsed] = useState(true);
   const theme = useTheme();
-  const colors = tokens(theme.palette.mode);
-  const colorMode = useContext(ColorModeContext);
 
   return (
     <div className="menu">
@@ -42,7 +40,7 @@ const Menu = () => {
           <span className="title">{item.title}</span>
           {item.listItems.map((listItem) => (
             <Link
-              to="/"
+              to={listItem.url}
               className={`listItem  ${
                 isCollapsed ? "listItemCollapsed" : undefined
               }`}
